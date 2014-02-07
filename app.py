@@ -64,6 +64,19 @@ except:
 ##### API
 @app.route('/')
 def api():
+    """Simple API endpoint which requires user authention to access.
+
+    Users can access this endpoint by using HTTP Basic Authentication when
+    making their HTTP request to the service.
+
+    We'll then use Stormpath's API to authenticate the user securely.
+
+    If the user cannot be authenticated we'll return a JSON error message along
+    with a 401 UNAUTHORIZED status code.
+
+    If the user can be authenticated successfully, we'll return a JSON message
+    along with a 200 OK status code.
+    """
     if not request.authorization:
         return jsonify({'error': 'Username and password required.'}), 401
 

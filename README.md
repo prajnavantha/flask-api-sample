@@ -2,6 +2,8 @@
 
 A simple Flask API authentication example, powered by Stormpath.
 
+![Tiger Sketch Mascot](https://github.com/rdegges/flask-api-sample/raw/master/assets/tiger-sketch.jpg)
+
 
 ## Premise
 

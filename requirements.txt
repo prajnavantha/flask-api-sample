@@ -1,2 +1,2 @@
 Flask==0.10.1
-stormpath-sdk==1.0.0.beta
+stormpath==1.0.1
